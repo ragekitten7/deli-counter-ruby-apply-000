@@ -5,7 +5,7 @@ def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
   else
-    counter = 0
+    counter = 1
     katz_deli.each do |x|
       new_array << "#{counter}. #{x}"
       counter += 1
