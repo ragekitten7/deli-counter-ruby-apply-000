@@ -10,6 +10,6 @@ def line(katz_deli)
       new_array = "#{counter}. #{x}"
       counter += 1
     end
-    puts "The line is currently: #{new_array.join("")}."
+    puts "The line is currently: #{new_array.join}."
   end
 end
