@@ -1,22 +1,22 @@
 katz_deli = []
 
 def line(katz_deli)
-  new_line = []
-if katz_deli.empty?
-  puts "The line is currently empty."
-else
-  counter = 0
-  katz_deli.each do |person|
-    counter += 1
-    new_line << "#{counter}. #{person}"
+  new_lines = []
+  if katz_deli.empty?
+    puts "The line is currently empty."
+  else
+    counter = 1
+    katz_deli.each do |names|
+      new_lines << "#{counter}. #{names}"
+      counter += 1
     end
-  puts "The line is currently: #{new_line.join(" ")}"
-end
+      puts "The line is currently: #{new_lines.join(" ")}"
+  end
 end
 
 def take_a_number(katz_deli, name)
   katz_deli << name
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end
 
 def now_serving(katz_deli)
